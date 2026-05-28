@@ -2,7 +2,7 @@
 
 Streaming on-device speech recognition on the **VoxRT** custom inference runtime. NeMo FastConformer (32M parameters), 16 kHz mono in, P&C-aware text out, cache-aware streaming with ~1.1 s chunks.
 
-- Current version: `v0.1.1`
+- Current version: `v0.1.2`
 - Minimum iOS: 16.0
 - Architectures shipped: `arm64` (iPhone / iPad, NEON-accelerated)
 - License: Apache-2.0 (Swift wrapper) · proprietary (compiled runtime, redistribution allowed via this Swift Package)
@@ -43,26 +43,26 @@ In Xcode: **File → Add Package Dependencies →** paste:
 https://github.com/VoxRT/voxrt-asr-ios
 ```
 
-…and pin to **v0.1.1**.
+…and pin to **v0.1.2**.
 
 Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/VoxRT/voxrt-asr-ios.git", from: "0.1.1"),
+    .package(url: "https://github.com/VoxRT/voxrt-asr-ios.git", from: "0.1.2"),
 ],
 ```
 
 ## Get the streaming model
 
 The model weights are NOT bundled — you fetch them once from
-[`voxrt-asr-models`](https://github.com/VoxRT/voxrt-asr-models/releases/tag/v0.1.1):
+[`voxrt-asr-models`](https://github.com/VoxRT/voxrt-asr-models/releases/tag/v0.1.2):
 
 ```
-https://github.com/VoxRT/voxrt-asr-models/releases/download/v0.1.1/streaming_medium_pc.vxrt
+https://github.com/VoxRT/voxrt-asr-models/releases/download/v0.1.2/streaming_medium_pc.vxrt
 ```
 
-SHA-256: `0d723e429157a8a8cb58739a1f090574f2f23db311ca7916b43411f5f727c79c`
+SHA-256: `93416c104937ee28b4d69f34ce3f858c2d536bae8eddb25f3bda204b7f9fdec8`
 
 You decide where it lives. Three common patterns:
 
@@ -217,7 +217,7 @@ Both decoders run the same Conformer encoder; the head is selected at session-cr
 
 ## Architectures roadmap
 
-`v0.1.1` ships only `arm64` for physical devices, NEON-optimized. Simulator slices (arm64-sim + x86_64) are included for build convenience but are not part of the supported production target list.
+`v0.1.2` ships only `arm64` for physical devices, NEON-optimized. Simulator slices (arm64-sim + x86_64) are included for build convenience but are not part of the supported production target list.
 
 | Target                       | Status     |
 | ---------------------------- | ---------- |
